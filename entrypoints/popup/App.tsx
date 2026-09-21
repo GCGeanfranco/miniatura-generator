@@ -84,7 +84,7 @@ function App() {
 async function ensureContentScriptInjected(tabId: number) {
   await browser.scripting.executeScript({
     target: { tabId, allFrames: true },
-    files: ['content-scripts/content.js'],
+    files: ['/content-scripts/content.js'],
   });
 }
 
